@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="banner">
+        <img src="banner.jpg" alt="Delicious Recipes Banner" class="banner-img">
+        <div class="banner-text">
+            <h1>Welcome to Recipe Finder</h1>
+            <p>Love to Eat</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Search Section -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search by ingredient or dish name">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <label>
+                <input type="checkbox" id="vegetarian"> Vegetarian
+            </label>
+            <label>
+                <input type="checkbox" id="vegan"> Vegan
+            </label>
+        </div>
+
+        <!-- Recipe Section -->
+        <h2>Recipes</h2>
+        <div id="recipes" class="recipe-container"></div>
+
+        <!-- Favorites Section -->
+        <h2>Favorites</h2>
+        <div id="favorites" class="favorite-container"></div>
+
+        <!-- Pagination -->
+        <div id="pagination">
+            <button id="prev-page">Previous</button>
+            <button id="next-page">Next</button>
+        </div>
+    </div>
+
+    <!-- Footer Banner -->
+    <div class="footer-banner">
+        <img src="footer-banner.jpg" alt="Cooking Tips Banner" class="footer-banner-img">
+        <div class="footer-banner-text">
+            <h3>Need More Inspiration?</h3>
+            <p>Check out our blog for more cooking tips and tricks!</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
